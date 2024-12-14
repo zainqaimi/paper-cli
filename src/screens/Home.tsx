@@ -2,6 +2,7 @@ import {View, Text, StyleSheet} from 'react-native';
 import React from 'react';
 import {useTheme} from 'react-native-paper';
 import BottomBar from '../components/BottomBar';
+import Loader from '../components/Loader';
 
 const Home = () => {
   const theme = useTheme();
@@ -11,7 +12,7 @@ const Home = () => {
       <View style={styles.container}>
         <Text style={{color: theme.colors.secondary}}>Home</Text>
       </View>
-
+      {/* <Loader /> */}
       <BottomBar />
     </View>
   );
