@@ -12,12 +12,14 @@ import {SafeAreaView, StyleSheet} from 'react-native';
 import Home from './src/screens/Home';
 import TopBar from './src/components/TopBar';
 import BottomBar from './src/components/BottomBar';
+import BottomTabs from './src/navigation/BottomTabs';
 
 function App() {
   return (
     <SafeAreaView style={styles.container}>
       <TopBar />
       <Home />
+      {/* <BottomTabs /> */}
     </SafeAreaView>
   );
 }

@@ -1,17 +1,17 @@
 import {View, Text, StyleSheet} from 'react-native';
 import React from 'react';
 import {useTheme} from 'react-native-paper';
-import BottomBar from '../components/BottomBar';
-import Loader from '../components/Loader';
 import AvatarScreen from '../components/AvatarScreen';
 import BadgeScreen from '../components/BadgeScreen';
 import BannerScreen from '../components/BannerScreen';
+import BottomTabs from '../navigation/BottomTabs';
+import BottomBar from '../components/BottomBar';
 
 const Home = () => {
   const theme = useTheme();
 
   return (
-    <View style={{backgroundColor: theme.colors.primary, flex: 1}}>
+    <View style={{backgroundColor: 'powderblue', flex: 1}}>
       <BannerScreen />
       <View style={styles.container}>
         <Text style={{color: theme.colors.secondary}}>Home</Text>
@@ -19,7 +19,8 @@ const Home = () => {
         <BadgeScreen />
       </View>
       {/* <Loader /> */}
-      <BottomBar />
+      {/* <BottomBar /> */}
+      {/* <BottomTabs /> */}
     </View>
   );
 };
