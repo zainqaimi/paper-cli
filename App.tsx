@@ -40,7 +40,7 @@ function App() {
         {/* <AnimatedFabs />
         <FabGroupScreen /> */}
         <CustomButton
-          text="custom"
+          text="custom Button"
           icon="cemera"
           mode="text"
           color="powderblue"
