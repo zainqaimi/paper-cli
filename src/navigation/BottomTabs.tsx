@@ -4,16 +4,19 @@ import MusicRoute from '../screens/bottomtabs/MusicRoute';
 import AlbumsRoute from '../screens/bottomtabs/AlbumsRoute';
 import RecentsRoute from '../screens/bottomtabs/RecentsRoute';
 import NotificationsRoute from '../screens/bottomtabs/NotificationsRoute';
+
 const routes = [
   {
+    id: 1,
     key: 'music',
-    title: 'Favorites',
-    focusedIcon: 'heart',
-    unfocusedIcon: 'heart-outline',
+    title: 'Music Play',
+    focusedIcon: 'music',
+    unfocusedIcon: 'music',
   },
-  {key: 'albums', title: 'Albums', focusedIcon: 'album'},
-  {key: 'recents', title: 'Recents', focusedIcon: 'history'},
+  {id: 2, key: 'albums', title: 'Albums', focusedIcon: 'album'},
+  {id: 3, key: 'recents', title: 'Recents', focusedIcon: 'history'},
   {
+    id: 4,
     key: 'notifications',
     title: 'Notifications',
     focusedIcon: 'bell',
@@ -21,7 +24,7 @@ const routes = [
   },
 ];
 export default function BottomTabs() {
-  const [index, setIndex] = React.useState(0);
+  const [index, setIndex] = React.useState<number>(0);
 
   const renderScene = BottomNavigation.SceneMap({
     music: MusicRoute,
